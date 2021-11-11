@@ -125,7 +125,6 @@ html {
 .site-brand {
   line-height: $header-height;
   margin-right: 50px;
-
   .site-brand-inner {
     @include relative-font-size(1.25 * $relative-header-size);
     font-weight: normal;
@@ -141,6 +140,8 @@ html {
     .site-favicon {
       display: inline-block;
       height: $header-height / 1.5;
+      image-rendering: -webkit-optimize-contrast;
+
       margin-right: 5px;
     }
   }
