@@ -101,6 +101,17 @@ html {
        url('../../fonts/roboto-v29-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+
+/* proxima-nova-regular - latin */
+@font-face {
+  font-family: 'ProximaNova';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../../fonts/proximanova-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../../fonts/proximanova-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 /* merriweather-regular - latin */
 @font-face {
   font-family: 'Merriweather';
@@ -116,7 +127,7 @@ html {
   margin-right: 50px;
 
   .site-brand-inner {
-    @include relative-font-size(1.225);
+    @include relative-font-size(1.25 * $relative-header-size);
     font-weight: normal;
 
     font-family: 'Merriweather';
@@ -136,7 +147,7 @@ html {
 }
 
 .site-nav {
-  @include relative-font-size(1.125);
+  @include relative-font-size(1.15 * $relative-header-size);
   line-height: $header-height;
   position: absolute;
   right: 0;
@@ -208,7 +219,7 @@ html {
  * Site footer
  */
 .site-footer {
-  @include relative-font-size(1.0);
+  @include relative-font-size(1.0  * $relative-header-size);
   color: $footer-text-color;
   background-color: $footer-background-color;
   text-align: left;
@@ -243,13 +254,13 @@ html {
   }
 
   .post-title {
-    @include relative-font-size(2.625);
+    @include relative-font-size(2.625  * $relative-header-size);
     letter-spacing: -1px;
     line-height: 1;
     font-family: 'Merriweather';
     font-weight: lighter;
     @include media-query($on-laptop) {
-      @include relative-font-size(2.25);
+      @include relative-font-size(2.25 * $relative-header-size);
     }
   }
 
@@ -274,13 +285,13 @@ html {
 }
 
 .page-heading {
-  @include relative-font-size(2);
+  @include relative-font-size(2 * $relative-header-size);
   font-weight: lighter;
 }
 
 .post-list-heading {
   font-weight: lighter;
-  @include relative-font-size(1.75);
+  @include relative-font-size(1.75 * $relative-header-size);
 }
 
 /**
@@ -335,12 +346,13 @@ html {
   }
 
   .post-link {
-    @include relative-font-size(1.85);
+    @include relative-font-size(1.85 * $relative-header-size);
     font-weight: 500;
     color: #333;
   }
 
   .post-excerpt {
+    @include relative-font-size(0.9);
     color: #777;
     word-break: break-word;
     overflow-wrap: break-word;
@@ -433,29 +445,29 @@ html {
     overflow-wrap: normal;
     word-wrap: normal;
     word-break: normal;
-
+    line-height: 23px;
+    font-feature-settings: "smcp" 1;
     h2 {
-
-      @include relative-font-size(2);
+      @include relative-font-size(2 * $relative-header-size);
 
       @include media-query($on-laptop) {
-        @include relative-font-size(1.75);
+        @include relative-font-size(1.75 * $relative-header-size);
       }
     }
 
     h3 {
-      @include relative-font-size(1.625);
+      @include relative-font-size(1.7 * $relative-header-size);
 
       @include media-query($on-laptop) {
-        @include relative-font-size(1.375);
+        @include relative-font-size(1.45 * $relative-header-size);
       }
     }
 
     h4 {
-      @include relative-font-size(1.25);
+      @include relative-font-size(1.25 * $relative-header-size);
 
       @include media-query($on-laptop) {
-        @include relative-font-size(1.125);
+        @include relative-font-size(1.125 * $relative-header-size);
       }
     }
 
@@ -472,6 +484,8 @@ html {
     }
 
     p, hr {
+	  font-size: 16px;
+	  line-height: 23px;
       margin-bottom: 24px;
     }
 
@@ -484,7 +498,7 @@ html {
 
   .post-related {
     &>*:first-child {
-      @include relative-font-size(1.425);
+      @include relative-font-size(1.425 * $relative-header-size);
       color: #333;
       margin-bottom: 14px;
     }
@@ -492,9 +506,7 @@ html {
     ul {
       margin-left: 15px;
       .post-link {
-        @include relative-font-size(1.075);
       }
-
       a {
         color: #666;
 
@@ -538,7 +550,7 @@ html {
   padding: 31px 0 0;
 
   a {
-    @include relative-font-size(1.125);
+    @include relative-font-size(1.125 * $relative-header-size);
     line-height: 15px;
     color: #666;
     max-width: 50%;
@@ -578,7 +590,7 @@ html {
   }
 
   .archives-time {
-    @include relative-font-size(1.5);
+    @include relative-font-size(1.5 * $relative-header-size);
 
     &:not(:first-child) {
       margin-top: 18px;
@@ -636,24 +648,24 @@ html {
     & > *:first-child {
       margin: 0;
       > :nth-child(1) {
-        @include relative-font-size(4.9);
+        @include relative-font-size(4.9 * $relative-header-size);
         margin-bottom: -0.2em;
         font-weight: bold;
         transition: 0.2s all;
 
         @include media-query($on-palm) {
-          @include relative-font-size(1.975);
+          @include relative-font-size(1.975 * $relative-header-size);
         }
       }
 
       > :nth-child(2) {
-        @include relative-font-size(1.9);
+        @include relative-font-size(1.9 * $relative-header-size);
         font-weight: normal;
         margin-bottom: 0.8em;
         transition: 0.2s all;
 
         @include media-query($on-palm) {
-          @include relative-font-size(1.175);
+          @include relative-font-size(1.175 * $relative-header-size);
         }
       }
 
@@ -663,7 +675,7 @@ html {
     }
 
     .post-subtitle {
-      @include relative-font-size(1.525);
+      @include relative-font-size(1.525 * $relative-header-size);
       color: #ffffffcc;
       padding-right: 280px;
 
@@ -689,7 +701,7 @@ html {
       }
 
       .post-tag {
-        @include relative-font-size(1.125);
+        @include relative-font-size(1.125 * $relative-header-size);
         display: inline-block;
         text-decoration: none;
         margin: 9px 12px 0 0;
@@ -746,7 +758,7 @@ html {
     margin-bottom: 8px;
     position: relative;
 
-    @include relative-font-size(1.6);
+    @include relative-font-size(1.6 * $relative-header-size);
 
     &:not(:first-child) {
       margin-top: 28px;
