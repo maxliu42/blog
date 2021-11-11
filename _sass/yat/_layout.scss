@@ -101,16 +101,6 @@ html {
        url('../../fonts/roboto-v29-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* open-sans-regular - latin */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local(''),
-       url('../../fonts/open-sans-v27-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../../fonts/open-sans-v27-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
 /* merriweather-regular - latin */
 @font-face {
   font-family: 'Merriweather';
@@ -257,6 +247,7 @@ html {
     letter-spacing: -1px;
     line-height: 1;
     font-family: 'Merriweather';
+    font-weight: lighter;
     @include media-query($on-laptop) {
       @include relative-font-size(2.25);
     }
@@ -284,9 +275,11 @@ html {
 
 .page-heading {
   @include relative-font-size(2);
+  font-weight: lighter;
 }
 
 .post-list-heading {
+  font-weight: lighter;
   @include relative-font-size(1.75);
 }
 
@@ -312,6 +305,7 @@ html {
     margin-bottom: $spacing-unit * 0.2;
     transition: 0.2s all;
     font-family: 'Merriweather';
+    font-weight: lighter;
     a {
       text-decoration: none;
 
@@ -341,8 +335,8 @@ html {
   }
 
   .post-link {
-    @include relative-font-size(1.65);
-    font-weight: $base-font-weight * 1.5;
+    @include relative-font-size(1.85);
+    font-weight: 500;
     color: #333;
   }
 
@@ -421,6 +415,7 @@ html {
     .post-title {
       margin-bottom: 6px;
       font-family: 'Merriweather';
+      font-weight: bold;
     }
 
     .post-subtitle {
@@ -472,6 +467,7 @@ html {
 
     h2, h3, h4, h5, h6 {
       font-family: 'Merriweather';
+      font-weight: lighter;
       margin: 60px 0 19px;
     }
 
