@@ -157,7 +157,6 @@ html {
   .nav-trigger {
     display: none;
   }
-
   .menu-icon {
     display: none;
   }
@@ -166,18 +165,23 @@ html {
     line-height: $base-line-height;
     color: $header-text-color;
     transition: 0.1s ease-in-out;
-    // Gaps between nav items, but not on the last one
     margin-right: 24px;
     &:hover {
       text-decoration: underline;
     }
   }
 
+
   @include media-query($on-laptop) {
     position: absolute;
     top: 0;
     text-align: left;
 
+    .trigger {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    
     label[for="nav-trigger"] {
       display: block;
       z-index: 2;
@@ -198,8 +202,8 @@ html {
     input ~ .trigger {
       clear: both;
       display: none;
-      border-radius: 3px;
-      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .06);
+      border-radius: 10px;
+      box-shadow: 0px 0px 2vw rgba(0, 0, 0, 0.1);
     }
 
     input:checked ~ .trigger {
@@ -209,7 +213,7 @@ html {
 
     .page-link {
       display: block;
-      padding: 5px 10px;
+      padding: 5px 5px;
       color: rgba($header-text-color, 80%);
       margin: 0 25px;
     }
