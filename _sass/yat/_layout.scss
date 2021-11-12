@@ -753,13 +753,13 @@ html {
     margin-left: 0;
     list-style: none;
   }
-
+  @include relative-font-size(1.05);
   .segment-name {
     font-weight: $base-font-weight * 1.5;
     margin-bottom: 8px;
     position: relative;
 
-    @include relative-font-size(1.6 * $relative-header-size);
+    @include relative-font-size(2.0 * $relative-header-size);
 
     &:not(:first-child) {
       margin-top: 28px;
