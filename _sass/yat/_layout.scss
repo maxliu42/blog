@@ -260,7 +260,6 @@ html {
 
   .post-title {
     @include relative-font-size(2.625  * $relative-header-size);
-    letter-spacing: -1px;
     line-height: 1.3;
     font-family: 'Merriweather';
     font-weight: lighter;
@@ -322,6 +321,7 @@ html {
     transition: 0.2s all;
     font-family: 'Merriweather';
     font-weight: lighter;
+    line-height: 1.3;
     a {
       text-decoration: none;
 
@@ -674,7 +674,7 @@ html {
         transition: 0.2s all;
 
         @include media-query($on-palm) {
-          @include relative-font-size(1.375 * $relative-header-size);
+          @include relative-font-size(1.175 * $relative-header-size);
         }
       }
 
