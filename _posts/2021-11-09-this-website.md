@@ -1,7 +1,7 @@
 ---
 layout: post
-title: This Website is a Work-In-Progress
-subtitle: Hopefully not for long!
+title: Hello, World!
+subtitle: Why this website?
 categories: markdown
 tags: [example]
 ---
