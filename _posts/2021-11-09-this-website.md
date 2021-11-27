@@ -2,7 +2,7 @@
 layout: post
 title: Hello, World!
 subtitle: Why this website exists
-categories: markdown
+categories: meta
 ---
 
 ## Writing is Remembering
