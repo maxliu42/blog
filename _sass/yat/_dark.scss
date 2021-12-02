@@ -1,4 +1,4 @@
-$dark-background-color: #111111 !default;
+$dark-background-color: #121212 !default;
 $dark-text-color: #ccc !default;
 
 html[data-theme="dark"]  {
@@ -84,8 +84,17 @@ html[data-theme="dark"]  {
   }
 
   .site-footer {
-    color: #fff;
-    background-color: #000;
+    color: #ddd;
+    background-color: #090909;
+    .social-icon {
+      color: white;
+      path { fill: white; }
+      
+      &:hover {
+        color: #AAAAAA;
+        path { fill: #AAAAAA; }
+      }
+    }
   }
 
   .left-vsplit:before {
@@ -209,4 +218,3 @@ html[data-theme="dark"]  {
     }
   }
 }
-

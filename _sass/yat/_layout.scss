@@ -228,13 +228,13 @@ html {
   color: $footer-text-color;
   background-color: $footer-background-color;
   text-align: left;
+  display: inline-block;
   transition: background-color 0.2s;
 
   .site-footer-inner {
     transition: border-top 0.2s;
     padding: $spacing-unit * 0.8 0;
   }
-
   a {
     $a-color: $brand-color;
     color: $a-color;
@@ -242,6 +242,24 @@ html {
     &:hover {
       color: lighten($a-color, 10%);
     }
+  }
+  .social-icon {
+    font-size: 50px;
+    color: black;
+    path { fill: black; }
+    transition: color 0.1s;
+    float: right;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+    
+    &:hover {
+      color: #343434;
+      path { fill: #343434; }
+    }
+  }
+  .margin-small {
+    margin-left: 5px;
   }
 }
 
@@ -486,12 +504,12 @@ html {
     h2, h3, h4, h5, h6 {
       font-family: 'Merriweather';
       font-weight: lighter;
-      margin: 60px 0 19px;
+      margin: 50px 0 19px;
     }
 
     p, hr {
 	  font-size: 16px;
-	  line-height: 23px;
+	  line-height: 24px;
       margin-bottom: 24px;
     }
 
@@ -504,9 +522,10 @@ html {
 
   .post-related {
     &>*:first-child {
-      @include relative-font-size(1.425 * $relative-header-size);
+	@include relative-font-size(1.525 * $relative-header-size);
       color: #333;
       margin-bottom: 14px;
+	  font-family: 'Merriweather', 'Roboto', Helvetica, Arial, sans-serif;
     }
 
     ul {
