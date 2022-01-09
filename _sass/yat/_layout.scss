@@ -122,6 +122,16 @@ html {
        url('../../fonts/merriweather-v25-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+/* hacknf - latin */
+@font-face {
+  font-family: 'HackNF';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../../fonts/hacknf-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../../fonts/hacknf-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 .site-brand {
   line-height: $header-height;
   margin-right: 50px;
@@ -758,6 +768,7 @@ html {
   }
 
   .sidebar {
+    -webkit-transform: translateZ(0);
     padding-left: 8px;
     transition: top 0.2s, display 0.2s;
 
