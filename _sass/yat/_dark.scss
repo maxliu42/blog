@@ -27,8 +27,31 @@ html[data-theme="dark"]  {
   }
 
   *:not(pre) > code {
-    color: $dark-text-color;
-    background-color: #454545;
+    color: #d63384;
+    background-color: #1f1f1f;
+  }
+
+  pre {
+    overflow-x: auto;
+    position: relative;
+    background-color: #1f1f1f;
+  
+    > code {
+      color: #DDDDDD;
+      display: inline-block;
+      padding: 20px!important;
+      background-color: transparent;
+      border: 0;
+    }
+  
+    table, pre {
+      margin-bottom: 0;
+  
+      .gutter, .code {
+        padding: 6px;
+        border: none;
+      }
+    }
   }
 
   blockquote {
