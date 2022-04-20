@@ -102,5 +102,5 @@ The redesign took me three days, with several hours of work per day. I used Neov
 
 Additionally, the redesign of the WCS site further helped me develop this blog. Code block formatting, improved table colours, $\LaTeX$--these are all features I eventually would've had to add while writing blog posts on *this* site. So it's more convenient for me to discover these issues at once than to find them gradually.
 
-Not to mention the site itself! Each minor improvement makes a big difference, and the redesign allows us to further integrate the site into our lessons. It's a central repository, containing links to our [GitHub](https://github.com/WoodlandsComputerScience/MeetingContent){:target="_blank"} and Discord server. I hope our club finds use for it even after I graduate. That would be nice to see!
+Not to mention the site itself! Each minor improvement makes a big difference, and the redesign allows us to further integrate the site into our lessons. It's a central repository, containing links to our [GitHub](https://github.com/WoodlandsComputerScience/MeetingContent){:target="_blank"} and Discord server. I hope Woodlands CS Club finds use for it even after I graduate. That would be nice to see!
 
