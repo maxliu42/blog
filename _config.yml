@@ -40,10 +40,10 @@ author: maxliu42
 #   "Copyright (c) 2017-{currentYear} <a href="https://example.com">{author}</a>"
 #   "Copyright © 2017-2021 Foobar"
 #
-copyright: "Max Liu (c) 2022"
+copyright: "max liu (c) 2023"
 
 description: >- # this means to ignore newlines until "baseurl:"
-  Max's blog on all sorts of fun stuff.
+  blog wip
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://maxliu.me" # the base hostname & protocol for your site, e.g. http://example.com
