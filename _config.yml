@@ -45,7 +45,7 @@ copyright: "max liu (c) 2023"
 description: >- # this means to ignore newlines until "baseurl:"
   blog wip
 
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://maxliu.me" # the base hostname & protocol for your site, e.g. http://example.com
 favicon: "/assets/images/favicon.png" # the favicon for your site
 favicon_brand: "/assets/images/favicon_header_black.png"
