@@ -1,6 +1,6 @@
 ## ‼️ Max's Blog
 
-**[Welcome to my blog!](https://maxliu.me/)**  
+**[Welcome to my blog!](https://maxliu.me/blog)**  
 For some detailed info on what this website is and why I created it, check out my [first post.](https://maxliu.me/meta/2021/12/01/hello-world.html)
 
 ## 🎵 Topics
