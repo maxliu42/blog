@@ -1,8 +1,19 @@
-
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
 <!-- and it's easy to individually load additional languages -->
 <script charset="UTF-8"
         src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js"></script>
+<script charset="UTF-8"
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/python.min.js"></script>
+<script charset="UTF-8"
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/javascript.min.js"></script>
+<script charset="UTF-8"
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/css.min.js"></script>
+<script charset="UTF-8"
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/ruby.min.js"></script>
+<script charset="UTF-8"
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/bash.min.js"></script>
+<script charset="UTF-8"
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/html.min.js"></script>
 
 {%- assign name = 'code_badge.enabled' -%}
 {%- include functions.html func='get_value' default='true' -%}
@@ -23,6 +34,13 @@
 <script>
 // Init highlight js
 document.addEventListener('DOMContentLoaded', function(event) {
+  // Configure highlight.js
+  hljs.configure({
+    tabReplace: '    ', // 4 spaces
+    classPrefix: 'hljs-',
+    languages: ['python', 'javascript', 'css', 'html', 'bash', 'ruby', 'go']
+  });
+  
   var els = document.querySelectorAll('pre code')
 
   function addLangData(block) {
@@ -64,6 +82,31 @@ document.addEventListener('DOMContentLoaded', function(event) {
     var el = els[i];
     handle(el);
   }
+  
+  // Also highlight any code blocks that might be added dynamically later
+  var observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      if (mutation.addedNodes && mutation.addedNodes.length > 0) {
+        // Check if any of the added nodes are code blocks or contain code blocks
+        for (var i = 0; i < mutation.addedNodes.length; i++) {
+          var node = mutation.addedNodes[i];
+          if (node.nodeType === 1) { // Only process element nodes
+            var codeBlocks = node.querySelectorAll('pre code');
+            if (codeBlocks.length > 0) {
+              for (var j = 0; j < codeBlocks.length; j++) {
+                handle(codeBlocks[j]);
+              }
+            } else if (node.tagName === 'CODE' && node.parentNode.tagName === 'PRE') {
+              handle(node);
+            }
+          }
+        }
+      }
+    });
+  });
+  
+  // Start observing the document with the configured parameters
+  observer.observe(document.body, { childList: true, subtree: true });
 });
 </script>
 
