@@ -43,6 +43,7 @@ def hello_world():
 # Call the function
 hello_world()
 ```
+
 ### $LaTeX$ Rendering
 
 The blog supports $LaTeX$ rendering for mathematical expressions. A more complex example:
@@ -53,16 +54,16 @@ $$ \frac{\partial^2 u}{\partial t^2} = c^2 \nabla^2 u $$
 
 > "The art of writing is the art of discovering what you believe." — Gustave Flaubert
 
-You can also use **bold text**, *italics*, and ~~strikethrough~~ for emphasis.
+You can also use **bold text**, _italics_, and ~~strikethrough~~ for emphasis.
 
 ### Lists and Tables
 
-| Feature | Description | Supported |
-|---------|-------------|-----------|
-| Markdown | Simple formatting syntax | ✅ |
-| LaTeX | Mathematical expressions | ✅ |
-| Code Highlighting | Syntax highlighting for code | ✅ |
-| Responsive Design | Works on mobile and desktop | ✅ |
+| Feature           | Description                  | Supported |
+| ----------------- | ---------------------------- | --------- |
+| Markdown          | Simple formatting syntax     | ✅        |
+| LaTeX             | Mathematical expressions     | ✅        |
+| Code Highlighting | Syntax highlighting for code | ✅        |
+| Responsive Design | Works on mobile and desktop  | ✅        |
 
 ## What's Next?
 
