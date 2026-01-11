@@ -1,12 +1,6 @@
-## ‼️ Max's Blog
+## 🎵 Max's Blog
 
 **[Welcome to my blog!](https://maxliu.me/blog)**  
-For some detailed info on what this website is and why I created it, check out my [first post.](https://maxliu.me/meta/2021/12/01/hello-world.html)
-
-## 🎵 Topics
-
-A variety, but mostly math, computer science, game development, and music production.
-
-## 🖥 Technologies
+A weekly music journal documenting what I've been listening to.
 
 This website is created using [Jekyll](https://jekyllrb.com/) and [YAT Theme](https://github.com/jeffreytse/jekyll-theme-yat).

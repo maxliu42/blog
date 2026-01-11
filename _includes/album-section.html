@@ -1,0 +1,22 @@
+{% comment %}
+  Usage: 
+  {% include album-section.html image="album-name.jpg" title="Album Title" artist="Artist Name" year="Year" %}
+  Your markdown content here...
+  {% include album-section-end.html %}
+  
+  Parameters:
+  - image: filename in assets/images/albums/ (required)
+  - title: album title (required)
+  - artist: artist name (required)
+  - year: release year (required)
+{% endcomment %}
+
+{% assign alt_text = include.artist | append: " - " | append: include.title %}
+
+<div class="album-section">
+  <div class="album-cover">
+    <img src="{{ '/assets/images/albums/' | append: include.image | relative_url }}" alt="{{ alt_text }}">
+  </div>
+  <div class="album-content" markdown="1">
+
+## {{ include.artist }} - {{ include.title }} ({{ include.year }})

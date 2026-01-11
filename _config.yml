@@ -40,10 +40,10 @@ author: maxliu42
 #   "Copyright (c) 2017-{currentYear} <a href="https://example.com">{author}</a>"
 #   "Copyright © 2017-2021 Foobar"
 #
-copyright: "max liu (c) 2025"
+copyright: "max liu (c) 2026"
 
 description: >- # this means to ignore newlines until "baseurl:"
-  blog wip
+  A weekly music listening log
 
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://maxliu.me" # the base hostname & protocol for your site, e.g. http://example.com
@@ -141,7 +141,7 @@ code_badge:
   enabled: "true"
   color: "#fff"
   background_color: "#b33600"
-  text_transform: "uppercase"  # ("uppercase", "lowercase", "capitalize")
+  text_transform: "uppercase" # ("uppercase", "lowercase", "capitalize")
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up

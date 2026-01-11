@@ -1,4 +1,4 @@
-home:
-  heading: "Max Liu"
-  subheading: "My infrequently updated blog"
-  banner: "Your image url"
+# Home page defaults (banner removed for minimal design)
+# home:
+#   heading: "Max's Blog"
+#   subheading: "Weekly music discoveries and reflections"
