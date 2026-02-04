@@ -1,0 +1,65 @@
+---
+layout: post
+title: "Listening Log #1"
+subtitle: "Week of January 27-February 3, 2026"
+categories: listening-log
+tags: [jazz, rock, classical]
+---
+
+{% include album-section.html image="millions-now-living-will-never-die.jpg" artist="Tortoise" title="Millions Now Living Will Never Die" year="1996" %}
+
+Avant-garde easy listening muzak. _Djed_ starts off all laid-back, settling in with a krautrocky beat reminiscent of Neu! or Stereolab. The jazzy keys betray nothing out of place, painting some comfortably vague impression of an office lounge. But seven minutes in, the setting gradually drops out, and at nine and a half minutes Tortoise bridge us to the next section with a stream of metallic blips, an irregular timbre barely recognizable as coming from David Pajo's guitar. Pajo, a new addition to the group, carries over his masterful technique from Slint, with his tremolo picked chime-like harmonics gluing the two halves of _Djed_ together, echoing his tremolo picking on Slint's _Good Morning, Captain_ (at 4:15).
+
+The name of the game is timbral juxtaposition. Once the organ comes in, it's clear that whatever lounge we were in is a post-apocalyptic one, with marimbas and vibraphones stringing you along, never quite resolving before that "what the fuck" moment of 13:52 where the song begins skipping over itself like a scratched CD. A drone enters in like the howling winds of a barren landscape and we get those lovely sounds of broken transmissions at 15:28. The overall mood is something like that of nuclear fallout. Nothing ever resolves---it almost sounds like the song has something it doesn't want to tell you. The marimbas and vibes reenter, playing one last enigmatic tune, and in the last two minutes we return inexplicably to a simpler beat from simpler times, lounge music at the end of history.
+
+The rest of the album is pretty good too, even if it never reaches the bewildering heights of _Djed_. The majestic waltz of _Glass Museum_ features one of Pajo's best, most hypnotic riffs. Like his riff on Slint's _Washer_, it unfolds with a grace and elegance that sets it apart from the rest of the record. The suspenseful midsection of the track is another highlight, tearing itself apart with its rhythmic propulsions and tense interplay between guitar and vibraphone before relaxing back into the main riff. The rest of the album is spottier, the tunes turning more cryptic, more like fragments than songs. What can we make of the brooding minimalism of _A Survey_, or the hauntological _Dear Grandma and Grandpa_? At least they stick the landing with the film noir panorama of _Along the Banks of Rivers_, something like the hushed theme of a private directive. Hypnotic majesty.
+
+{% include album-section-end.html %}
+
+{% include album-section.html image="out-to-lunch.jpg" artist="Eric Dolphy" title="Out to Lunch" year="1964" %}
+
+Speaking of the vibraphone, what do y'all know about Bobby Hutcherson? His vibes on this record drag you into the bizarro sound world immediately. As Eric Dolphy said, "Bobby's vibes have a freer, more open sound than a piano. Pianos seem to control you, Bobby's vibes seem to open you up." Free from the handcuffs of chordal harmony, the players don't impose on each other but rather converse freely through rigorous imagination, freewheeling flights of fancy that link up just barely often enough for everything to hang together, resulting in a feeling of in-the-pocket rightness even if you lose track of everything sixteen bars in. And don't bother counting---the title track here is supposedly in 5/4, but the players don't seem particularly worried about that. As Dolphy says, "The bass follows no bar line at all. Notice Tony. He doesn't play time, he plays."
+
+Mingus said of Dolphy that "he had mastered all the instruments he played. In fact, he knew more than was supposed to be possible to do on them," and Dolphy plays his three signature instruments to perfection on this record---bass clarinet on the first two tracks, alto saxophone on the last two, and flute on _Gazzelloni_. And Tony Williams' drums perfectly complement the "intervallic" solos of Hubbard and Dolphy. He trusts the players to keep time themselves, freeing himself up to accent or reinterpret the rhythms of the rest of the group, to match the freedom of the ensemble.
+
+What's going on here harmonically I have no clue. Dolphy's overblown solos disregard traditional tone and tonality, leaping in wild wide intervals. Some of the harmony on this record sounds nothing like any other jazz music to me. Some parts, like the quartal runs on the vibes in the midsection of _Gazzelloni_, remind me almost of the Schoenberg of Chamber Symphony No. 1---there are similarities in texture and tone colour, too. And what's distinctive about this and the Schoenberg is a sense of perpetual newness, of risks being taken with delight. It unfolds like a constant discovery.
+
+{% include album-section-end.html %}
+
+{% include album-section.html image="any-other-city.jpg" artist="Life Without Buildings" title="Any Other City" year="2001" %}
+
+The first line we hear on the record, "No details, but I'm gonna persuade you," sounds like its thesis statement. Sue Tompkins' animated speech-singing vocal performance is the centerpiece of the album, with her barrage of repetitive phrases and playful inflections being perfectly supported by the ebbs and flows of the post-punk trio. _Let's Get Out_ weaves angular guitar riffs, drawn-out buildups, and rambling spoken word vocals into what is basically a pop tune. That it scratches all these itches in under four minutes is nothing short of euphoric. Tompkins convinces without the details. Her lyrics are closer to Gertrude Stein or cubism than they are to any indie rocker I can think of---the strength of her phrases comes from the juxtaposition of their emotionally charged nature and the lack of context they're presented in, allowing them to take on a multitude of meanings through repetition. We can only guess at the contexts of accusations like "for you he wrote something else", sung in a tone both caustic and heartbroken, or lines like "in any other city, I'm hung up with a short click", but that only makes them more evocative. And how come she anchors the most euphoric chorus on the record with "I still believe in getting low"? Tompkins' strength as a lyricist is her ability to evoke entire stories and perspectives with a few delightfully strange phrases that lodge themselves into your mind. And "holding you is like the new past"---is that the best line ever written or what?
+
+I think the second half of the record is a bit weaker than the first, though _Sorrow_ is a beautiful, crushing closer, a perfect counterbalance for the record. The third song, _Juno_, might be my favourite, with its soft-loud verse-chorus structure and shiver-inducing slowdown halfway through, building to one last chorus that gives way to the unbearably poignant and cathartic second half. "Don't be far from me," Tompkins sings quietly, before the torrent of guitar riffs bursts free once again. The guitar playing reminds me a bit of Midwest emo, and combined with the evocative lyrics it's hard not to think of Cap'n Jazz, particularly a song like _Little League_---what feeling unites Tompkins' cries of "my lips are sealed" and Tim Kinsella's agonized screams of "museum mouth"? Whatever it is, I doubt they'd tell us.
+
+{% include album-section-end.html %}
+
+{% include album-section.html image="ptah-the-el-daoud.jpg" artist="Alice Coltrane" title="Ptah, the El Daoud" year="1970" %}
+
+Alice Coltrane put it best herself: "Sometimes on earth we don't have to wait for death to go through a sort of purging, a purification." The four spiritual journeys on _Ptah, the El Daoud_ are proof enough. That bluesy riff of _Turiya & Ramakrishna_ seems to go on forever, and I'll happily listen to it forever.
+
+{% include album-section.html image="marmen-quartet.jpg" artist="Ligeti & Bartók" title="String Quartets" year="Marmen Quartet, 2025" %}
+
+This is the Marmen Quartet's recording debut, after forming in 2013 at the Royal College of Music in London. I like the concept of having the Ligeti quartets in dialogue with Bartók's fourth quartet (Ligeti's first was directly inspired by Bartók's third and fourth), but this recording just doesn't do it for me. Discussing the pieces is another consideration entirely, so I'll restrain myself and just talk about the Bartók performance.
+
+For one, the use of rubato puzzles me. The rubato is extreme to the point of theatricality, which in itself isn't necessarily a bad thing, but here it becomes a distraction, especially the heavy-handed ritardandos within phrases. For the Marmen Quartet it seems like "emphatic" and "slow" are synonyms, and the little pauses around moments of emphasis constantly kill off the forward momentum. Their slides are much more pronounced than, say, the Emerson recording---again, not necessarily a bad thing, and it makes for a pretty fun second movement, but in my opinion the effect in the first and final movements is disastrous. It's Bartók with all the edges sawed off, a _mannered_ Bartók. To put it one way, the climaxes sound exhausting rather than invigorating. To put it another way, they lurch where they should lunge. I'll stick with the Takács.
+
+{% include album-section-end.html %}
+
+{% include album-section.html image="tod-und-verklarung.jpg" artist="Richard Strauss" title="Metamorphosen / Death & Transfiguration" year="Karajan/BPO, 1983" %}
+
+The only thing I have to say is that the transfiguration theme is beautiful. But I can't say the piece has cured my fear of death, and for me it only raises more questions. Is nostalgia a comfort or a torture? Was the transfiguration earned, or simply inevitable? And what makes a young composer write about death, anyway?
+
+{% include album-section-end.html %}
+
+{% include album-section.html image="femenine.jpg" artist="Julius Eastman" title="Femenine" year="S.E.M. Ensemble, 1974" %}
+
+Some people listen to Handel every Christmas.<br>I listen to Eastman.
+
+Eastman often gets grouped with contemporary minimalists like Steve Reich and Philip Glass, but their compositional approaches were fundamentally different. For Reich and Glass, minimalism began as a technique allowing them to _remove_ the element of self from their work. If the whole piece derives from a predetermined process, then there's no room for ego. This was something of a theme in the mid-20th century---Boulez had the idea with serialism and wanting the composer to be "anonymous", a method derived from Schoenberg's twelve-tone system. Everyone was trying to get away from themselves.
+
+And then came Eastman, a composer who was entirely himself. As he declared in a 1976 interview, "What I am trying to achieve is to be what I am to the fullest: Black to the fullest, a musician to the fullest, a homosexual to the fullest." As the mid-20th century classical avant-garde was shifting in the direction of impersonality, the opposite was happening in jazz and poetry, both fields deeply influential for Eastman. And who could forget Thelonious Monk's saying that "a genius is the one most like himself"? What separates Eastman from Reich and Glass is this element of genius---that is, the effect of his brilliant presence in the work, of the moments of joyful improvisation where his ego, along with his bandmates, is asserted, not denied. The work doesn't follow an impartial process running its course as in Reich or Glass. The idea instead is to allow for as much of each player's spontaneous self-expression as possible and for the minimalist process to be the occasion for this freedom.
+
+The impartial process allows for the performers' subjective choices, allows them to reframe it this way and that way, at their whims, impulsive and ecstatic ruptures in a set pattern, a collective curiosity in prodding the parameters of the piece itself, which makes Femenine a very special work---it's a cross between something like collective improvisation in jazz (like Coltrane's _Ascension_) and the process music of Steve Reich (as in _Music for 18 Musicians_). The result is triumphant, ecstatic, personal, with no set narrative or process but rather the whole ensemble coming alive and playing together, as in a joyous conversation, boisterous and with good food, each freewheeling voice free to assert itself, to celebrate and sing itself in the whole communion. The central ostinato is no longer a containing structure but rather a seed for the rest of the music to grow around. It's music as an organic process, not a mechanical one---in Eastman's musical worldview, minimalist music becomes the most freeing genre, not the most pre-determined. The music becomes open, not closed. I see this as one of the great accomplishments in classical music, which makes it both depressing and enraging that Eastman died pretty much completely forgotten. He deserved much better in his lifetime, but he is still so fully present in the music, and for that I can only thank him.
+
+{% include album-section-end.html %}
