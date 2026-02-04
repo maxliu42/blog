@@ -3,7 +3,7 @@ name: Github Pages
 on:
   push:
     branches:
-      - main # Trigger on main branch
+      - main
 
 jobs:
   build_and_deploy:
@@ -11,7 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Use GitHub Actions' cache to cache dependencies on servers
       - uses: actions/cache@v4
         with:
           path: vendor/bundle
@@ -19,15 +18,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
 
-      # Use GitHub Deploy Action to build and deploy to Github
       - uses: jeffreytse/jekyll-deploy-action@master
         with:
           provider: "github"
-          token: ${{ secrets.GH_TOKEN }} # It's your Personal Access Token(PAT)
-          repository: "" # Default is current repository
-          branch: "gh-pages" # Default is gh-pages for github provider
-          jekyll_src: "./" # Default is root directory
-          jekyll_cfg: "_config.yml" # Default is _config.yml
-          jekyll_baseurl: "/blog" # Match _config.yml baseurl
-          cname: "" # Default is to not use a cname
-          actor: "" # Default is the GITHUB_ACTOR
+          token: ${{ secrets.GH_TOKEN }}
+          branch: "gh-pages"
+          jekyll_baseurl: "/blog"

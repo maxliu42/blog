@@ -15,10 +15,9 @@ class CodeEditor extends HTMLDivElement {
     if (this.initialized) return;
     this.initialized = true;
 
-    // Get initial content and input if provided
     const content = this.textContent.trim();
     const [code, inputs] = content.split("#####").map((s) => s.trim());
-    this.textContent = ""; // Clear the original content
+    this.textContent = "";
 
     this.setupEditor(code);
     this.setupInputOutput(inputs);
@@ -26,35 +25,30 @@ class CodeEditor extends HTMLDivElement {
   }
 
   setupEditor(initialCode) {
-    // Create main container
     const mainContainer = document.createElement("div");
     mainContainer.className = "editor-container";
 
-    // Create controls container
     const controlsContainer = document.createElement("div");
     controlsContainer.className = "controls-container";
 
-    // Create Run button
     this.runButton = document.createElement("button");
     this.runButton.textContent = "Run";
     this.runButton.className = "btn btn-primary";
     this.runButton.disabled = true;
 
-    // Create Restart button
     this.restartButton = document.createElement("button");
     this.restartButton.textContent = "Restart Python";
     this.restartButton.className = "btn btn-danger";
     this.restartButton.disabled = true;
 
-    // Add button event listeners
     this.runButton.addEventListener("click", () => this.runCode());
-    this.restartButton.addEventListener("click", () => this.initializePyodide());
+    this.restartButton.addEventListener("click", () =>
+      this.initializePyodide()
+    );
 
-    // Set up Ace Editor
     const editorDiv = document.createElement("div");
     editorDiv.className = "editor";
 
-    // Initialize Ace Editor
     this.editor = ace.edit(editorDiv);
     this.editor.setTheme("ace/theme/monokai");
     this.editor.session.setMode("ace/mode/python");
@@ -69,13 +63,11 @@ class CodeEditor extends HTMLDivElement {
       this.editor.setValue(initialCode, -1);
     }
 
-    // Add elements to the main container
     controlsContainer.appendChild(this.runButton);
     controlsContainer.appendChild(this.restartButton);
     mainContainer.appendChild(controlsContainer);
     mainContainer.appendChild(editorDiv);
 
-    // Add the main container to the DOM
     this.appendChild(mainContainer);
   }
 
@@ -83,7 +75,6 @@ class CodeEditor extends HTMLDivElement {
     const ioContainer = document.createElement("div");
     ioContainer.className = "input-output-container";
 
-    // Create input container
     const inputContainer = document.createElement("div");
     inputContainer.className = "input-container";
     this.inputDiv = document.createElement("textarea");
@@ -94,7 +85,6 @@ class CodeEditor extends HTMLDivElement {
     }
     inputContainer.appendChild(this.inputDiv);
 
-    // Create output container
     const outputContainer = document.createElement("div");
     outputContainer.className = "output-container";
     this.outputDiv = document.createElement("pre");
@@ -104,12 +94,10 @@ class CodeEditor extends HTMLDivElement {
     ioContainer.appendChild(inputContainer);
     ioContainer.appendChild(outputContainer);
 
-    // Add to the existing editor container
     this.querySelector(".editor-container").appendChild(ioContainer);
   }
 
   initializePyodide() {
-    // Terminate existing worker if any
     if (this.worker) {
       this.worker.terminate();
     }
@@ -118,7 +106,6 @@ class CodeEditor extends HTMLDivElement {
     this.restartButton.disabled = true;
     this.outputDiv.textContent = "Initializing Python...";
 
-    // Create new worker
     this.worker = new Worker("/assets/js/py-worker.js");
 
     this.worker.onmessage = (event) => {
@@ -130,7 +117,8 @@ class CodeEditor extends HTMLDivElement {
         this.outputDiv.textContent = "Python ready!";
       } else if (type === "error") {
         if (error.includes("Pyodide")) {
-          this.outputDiv.textContent = "Failed to initialize Python. Please try again.";
+          this.outputDiv.textContent =
+            "Failed to initialize Python. Please try again.";
         } else {
           this.outputDiv.textContent = error;
         }
@@ -142,7 +130,6 @@ class CodeEditor extends HTMLDivElement {
       }
     };
 
-    // Initialize the worker
     this.worker.postMessage({ type: "init" });
   }
 
@@ -151,17 +138,16 @@ class CodeEditor extends HTMLDivElement {
     this.outputDiv.textContent = "Running...";
 
     const code = this.editor.getValue();
-    const inputs = this.inputDiv.value.split("\n").filter(x => x);
+    const inputs = this.inputDiv.value.split("\n").filter((x) => x);
     this.currentRunId++;
 
     this.worker.postMessage({
       type: "run",
       id: this.currentRunId,
       code,
-      inputs
+      inputs,
     });
   }
 }
 
-// Register the custom element
-customElements.define("code-editor", CodeEditor, { extends: "div" }); 
+customElements.define("code-editor", CodeEditor, { extends: "div" });
