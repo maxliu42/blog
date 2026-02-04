@@ -1,13 +1,10 @@
 {% assign alt_text = include.artist | append: " - " | append: include.title %}
 
-<div class="album-section">
-  <div class="album-cover">
-    <img
-      src="{{ '/assets/images/albums/' | append: include.image | relative_url }}"
-      alt="{{ alt_text }}"
-    />
-  </div>
-  <div class="album-content" markdown="1">
-    ## {{ include.artist }} - {{ include.title }} ({{ include.year }})
-  </div>
+<div class="album-header">
+  <img
+    class="album-cover"
+    src="{{ '/assets/images/albums/' | append: include.image | relative_url }}"
+    alt="{{ alt_text }}"
+  />
+  <h2>{{ include.artist }} – {{ include.title }} ({{ include.year }})</h2>
 </div>
