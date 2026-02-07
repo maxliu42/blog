@@ -1,0 +1,83 @@
+/* Additional styling for code blocks */
+pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+pre code {
+  display: block;
+  padding: 0;
+  overflow-x: auto;
+  line-height: inherit;
+  word-wrap: normal;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+/* Ensure Python syntax highlighting works properly */
+.language-python .hljs-keyword,
+.language-python .hljs-built_in {
+  color: #569cd6;
+}
+
+.language-python .hljs-string {
+  color: #ce9178;
+}
+
+.language-python .hljs-comment {
+  color: #6a9955;
+}
+
+.language-python .hljs-function,
+.language-python .hljs-title {
+  color: #dcdcaa;
+}
+
+.language-python .hljs-number {
+  color: #b5cea8;
+}
+
+.language-python .hljs-decorator {
+  color: #d7ba7d;
+}
+
+/* JavaScript syntax highlighting */
+.language-javascript .hljs-keyword {
+  color: #569cd6;
+}
+
+.language-javascript .hljs-string {
+  color: #ce9178;
+}
+
+.language-javascript .hljs-comment {
+  color: #6a9955;
+}
+
+.language-javascript .hljs-function,
+.language-javascript .hljs-title {
+  color: #dcdcaa;
+}
+
+.language-javascript .hljs-number {
+  color: #b5cea8;
+}
+
+/* Make code blocks stand out more */
+.highlight {
+  position: relative;
+  margin-bottom: 16px;
+  border-radius: 6px;
+}
+
+/* Improve badge visibility */
+pre.badge::before {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 22px;
+  top: 0;
+  border-radius: 0 0 0 4px;
+} 
